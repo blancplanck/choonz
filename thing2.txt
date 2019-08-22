@@ -1,0 +1,63 @@
+# Welcome to Sonic Pi v3.1
+
+'''
+live_loop :ahh do
+  sample :ambi_choir, attack: 1.1, release: 1.1
+  sample :ambi_drone, attack: 1.1, release: 1.1
+  sync :beatz
+
+  sleep 0.25
+
+end
+#'''
+live_loop :nutz do
+  use_synth :piano
+  sync :beatz
+  
+  # play 65
+  # sleep 1.5
+  play_pattern_timed chord(:C5, :M7), [0.5, 0.25]
+  
+  
+end
+#'''
+
+#'''
+live_loop :kay do
+  #'''
+  use_synth :chiplead
+  sync :beatz
+  
+  play 57, sustain: 0.4
+  sleep 0.5
+  play 60
+  sleep 0.5
+  play 57
+  sleep 0.5
+  play 64, release: 1.2, sustain: 0.3
+  #'''
+end
+#'''
+
+
+live_loop :beatz do
+  # sync :kay
+  #'''
+  sample :drum_cymbal_closed
+  sleep 0.25
+  sample :drum_bass_hard
+  
+  # sample :bass_trance_c
+  # sample :bass_drop_c, amp: 0.6
+  sleep 0.25
+  '''
+  sample :drum_heavy_kick
+  sleep 0.5
+  sample :drum_cymbal_soft
+  sleep 0.5
+  sample :drum_cymbal_closed
+  '''
+end
+# Welcome to Sonic Pi v3.1
+
+
